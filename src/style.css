@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'MochiyPopPOne';
+    src: url('./MochiyPopPOne-Regular.ttf');
+}
+
+:root {
+    --main-nav-color: rgb(191, 63, 73);
+    --main-nav-link-color: rgb(255, 129, 68);
+    --main-nav-link-bg-color: rgb(231, 196, 109);
+    --main-content-bg-color: rgb(231, 138, 117);
+    --main-yellow: rgb(254, 241, 81);
+}
+
+*,
+*::before,
+*:after {
+    box-sizing: border-box;
+    font-family: 'MochiyPopPOne';
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background-image: url('./ice-cream.png');
+    background-size: contain;
+}
+
+#nav {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 20px;
+    margin-bottom: 40px;
+    background-color: var(--main-nav-color);
+}
+
+.nav-link {
+    height: 50px;
+    padding: 0 10px;
+    font-size: 26px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--main-nav-link-color);
+    filter: brightness(0.8);
+}
+.nav-link:hover {
+    filter: brightness(1);
+}
+
+.active-tab {
+    filter: brightness(1);
+}
+
+.content-wrapper {
+    margin: auto;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-nav-link-bg-color);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-container,
+.description-container {
+    max-width: 800px;
+    padding: 10px;
+    background-color: var(--main-yellow);
+    border: 10px solid var(--main-nav-color);
+    filter: brightness(0.9);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.title-container {
+    width: 800px;
+    text-align: center;
+}
+.description-container {
+    width: 800px;
+}
+
+.title {
+    margin: 0;
+}
+
+.description-author {
+    padding-left: 20px;
+}
+
+.menu-item-img {
+    height: 200px;
+}
+
+.menu-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: var(--main-yellow);
+    border: 10px solid var(--main-nav-color);
+    filter: brightness(0.9);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.contact-info span:first-of-type {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-info span:nth-of-type(3n) {
+    margin-bottom: 10px;
+}
+
+.contact-info span {
+    display: block;
+}
