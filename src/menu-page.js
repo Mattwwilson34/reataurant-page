@@ -1,3 +1,5 @@
+import icecream from './icecream.png';
+
 const Menu = {
     render: function () {
         this.createElements();
@@ -49,7 +51,7 @@ const Menu = {
     addText: function () {
         this.title.textContent = 'Menu';
         this.menuItemImgs.forEach((img) => {
-            img.src = '../cone1.svg';
+            img.src = icecream;
         });
         this.menuItemText.forEach((text) => {
             text.textContent = 'Space Cone';
